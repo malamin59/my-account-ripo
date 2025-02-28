@@ -7,9 +7,10 @@
     <!-- link of daisyui  --> 
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
-
+  <!-- tailwind cs link -->
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-slate-800">
+<body class=" bg-slate-800">
 <section class="max-w-md min-h-screen mx-auto py-6 bg-gray-200 ">
     <header>
         <nav class="flex justify-center items-center mt-5">
@@ -35,7 +36,7 @@
             <label class="label">
               <span class="label-text">Account number</span>
             </label>
-            <input type="number" placeholder="type your number" class="input input-bordered" required/>
+            <input value="01882412260" id="account-number" type="number" placeholder="type your number" class= "input input-bordered" required/>
           </div>
 
 
@@ -45,7 +46,7 @@
             <label class="label">
               <span class="label-text">PIN</span>
             </label>
-            <input type="text" placeholder="type your PIN" class="input input-bordered" required />
+            <input value="1234" id="pin" type="text" placeholder="type your PIN" class="input input-bordered" required />
             <label class="label">
               <a href="#" class="label-text-alt link link-hover">Forgot password?</a>
             </label>
