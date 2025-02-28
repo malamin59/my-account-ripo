@@ -8,8 +8,8 @@
     <!-- link of daisyui  --> 
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <link href="./output.css" rel="stylesheet"> -->
   <!-- tailwind cs link -->
-  <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class=" bg-slate-800">
 <section class="max-w-md min-h-screen mx-auto py-6 bg-gray-200 ">
@@ -20,7 +20,7 @@
     <nav class="flex justify-around items-center">
         <img class="w-16" src="assets/Group.png" alt="">
         <div> 
-        <h1 class="text-3xl"> $ 4500</h1>
+        <h1  class="text-3xl"> $ <span id="main-balance"> 4500</span></h1>
         <p class="border rounded p-1"> available balance</p>
     </div> 
         <button class="btn"> logout </button>    
@@ -79,7 +79,12 @@
                       <span class="label-text">Account number</span>
                     </label>
                     <input value="01882412260" id="account-number" type="number" placeholder="type your number" class= "input input-bordered" required/>
+                    <label class="label">
+                        <span class="label-text">Amount</span>
+                      </label>
+                      <input id="amount" type="number" placeholder="type your mount" class= "input input-bordered" required/>
                   </div>
+                  
         
                   <div class="form-control">
                     <label class="label">
@@ -91,17 +96,16 @@
                     </label>
                   </div>
                   <div class="form-control mt-4">
-                    <button id="login-btn" class="btn btn-neutral border-none bg-blue-700">Add money</button>
+                    <button id="add-money" type="submit" class="btn btn-neutral">Add money</button>
                   </div>
               </div>
             </form>
           </div>
         </div>
       </div>
-
-     </section>
-
-    </section>  
+<!-- <script src="jsfolder/addmoney.js"></script> -->
+ <script src="jsfolder/recap.js"></script>
+ 
 </header> 
 
 

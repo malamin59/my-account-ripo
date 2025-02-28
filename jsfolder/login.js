@@ -1,5 +1,3 @@
-
-
 document.getElementById('login-btn').addEventListener('click', function(event){
 event.preventDefault()
 
@@ -20,9 +18,6 @@ else{
 else{
  alert("need value account Number")
 }
-
-
-
 })
 
 
